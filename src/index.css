@@ -70,7 +70,6 @@ footer {
 }
 
 .item-text {
-    font-size: 1.2rem;
     margin: 0;
     padding: 0;
 }
@@ -132,14 +131,13 @@ a {
 }
 
 a:hover {
-    color: var(--color-brand);
+    color: white;
 }
 
 form .form-control {
     color: black;
     border: black;
     outline: none;
-    border-radius: 15px;
     padding: 0.5rem 1rem;
     background-color: #ddd;
 }
@@ -185,6 +183,13 @@ form .form-group {
     margin-left: 0.25rem;
 }
 
+.cta {
+    color: blue;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .invalid {
     color: red;
     margin-left: 0.25rem;
@@ -202,9 +207,6 @@ form .form-group {
     color: grey
 }
 
-.active {
-    color: red;
-}
 
 .line {
     display: inline-block;
@@ -212,10 +214,36 @@ form .form-group {
 
 .form-button {
     margin-top: 0.5rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
     box-shadow: 2px 2px 5px #000;
     padding: 0.25rem;
+}
+
+.button {
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    padding: 0.7rem;
+    background-color: blue;
+    color: white;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+a.button:hover {
+    color: white;
+}
+
+.input-field {
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    color: grey;
 }
 
 select.select-tag {
@@ -242,41 +270,6 @@ select.select-tag:focus {
 }
 
 
-.tableDesign {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-weight: bold;
-    font-family: arial;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-.table thead th {
-    background-color: darkcyan;
-    color: #fff;
-}
-
-.table th,
-.table td {
-    padding: 10px 2px;
-}
-
-.table tbody tr:nth-of-type(even) {
-    background: #eee;
-}
-
-.table tbody tr:last-of-type {
-    border-bottom: 2px solid darkcyan;
-}
-
-.table-image {
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    border-radius: 1000px;
-    width: 100px;
-    height: 100px;
-}
-
 .symbol {
     font-size: 1rem;
     font-weight: 700;
@@ -288,17 +281,7 @@ select.select-tag:focus {
 }
 
 
-.mexican-wave:before {
-  -webkit-animation: mexican-wave .75s infinite ease backwards;
-    animation: mexican-wave .75s infinite ease backwards;
-    border-radius: 100%;
-    content: '';
-    height: 10px;
-    position: absolute;
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    width: 10px; 
-}
+/* Login */
 
 .Auth-form-container {
   display: flex;
@@ -323,15 +306,55 @@ select.select-tag:focus {
 }
 
 .Auth-form-title {
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 24px;
+  margin-bottom: 1rem;
+  font-size: 22px;
   color: rgb(34, 34, 34);
-  font-weight: 800;
+  text-align: left;
 }
 
 label {
   font-size: 14px;
   font-weight: 600;
   color: rgb(34, 34, 34);
+}
+
+.arrow {
+    border-radius: 1000px;
+    display: inline-flex;
+    background-color: white;
+    color: blue;
+    padding: 0px 4px;
+    text-align: center;
+    margin-left: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.divider {
+    width: 60px;
+    height: 6px;
+    border-radius: 12px;
+    background-color: rgb(220, 215, 215);
+    margin-right: 8px;
+}
+
+.divider.active {
+    background-color: blue;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    background-color: rgb(35, 207, 255);
+    position: relative;
+}
+
+.logo-outer {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    background-color: blue;
+    width: 34px;
+    height: 34px;
 }
