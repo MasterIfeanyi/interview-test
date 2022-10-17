@@ -1,4 +1,4 @@
-import { FaCheck, FaChevronDown, FaArrowLeft } from "react-icons/fa"
+import { FaCheck, FaArrowLeft } from "react-icons/fa"
 import { Link, useNavigate } from "react-router-dom"
 import "./Domain.css";
 
@@ -13,7 +13,7 @@ const Name = (props) => {
 
             <div className="row">
                 <div className="col-md-6 mx-auto">
-                    <div className="mt-5 mb-4    group">
+                    <div className="mt-5 mb-4 group">
                         <div className="d-flex align-items-center loader">
                             <div className="circle circle-green">
                                 <FaCheck />
@@ -34,7 +34,7 @@ const Name = (props) => {
 
             <div className="row d-flex justify-content-start align-items-start">
                 <div className="col-auto mb-5">
-                    <button onClick={navigate(-1)}><FaArrowLeft /></button>
+                    <button className="btn" style={{fontSize: "1.4rem"}} onClick={() => navigate(-1)}><FaArrowLeft /></button>
                 </div>
             </div>
 
@@ -53,9 +53,9 @@ const Name = (props) => {
                         </div>
                         <p className="text-center"><Link to="/details" className="">I want to create a Domain Name with LetOut</Link></p>
                         <div className="d-grid gap-2 mt-3">
-                            <a href="/" className="button">
+                            <Link to="/" className="button">
                                 Next
-                            </a>
+                            </Link>
                         </div>
                     </form>
                 </div>

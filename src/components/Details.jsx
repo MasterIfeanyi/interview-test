@@ -101,7 +101,7 @@ const Details = () => {
                         </div>
                     </div>
                     <div className="d-grid gap-2 mt-3 text-center">
-                        <Link to="/signup" className="button">
+                        <Link to="/domain" className="button">
                             Next
                         </Link>
                     </div>

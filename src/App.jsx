@@ -11,10 +11,10 @@ function App() {
       <section className="section">
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Name />} />
+            <Route index element={<Domain />} />
+            <Route path="/details" element={<Details/>} />
+            <Route path="/domain" element={<Name />} />
           </Route>
-          <Route path="/details" element={<Details/>} />
-          <Route path="/signup" element={<Domain />} />
         </Routes>
       </section>
     </main>

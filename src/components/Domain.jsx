@@ -52,11 +52,11 @@ const Domain = (props) =>  {
                                 </select>
                             </div>
                         </div>
-                        <p className="text-center"><Link to="/details" className="">Already have an existing domain ?</Link></p>
+                        <p className="text-center"><Link to="/domain" className="">Already have an existing domain ?</Link></p>
                         <div className="d-grid gap-2 mt-3">
-                            <a href="/" className="button">
+                            <Link to="/details" className="button">
                                 Next
-                            </a>
+                            </Link>
                         </div>
                     </form>
                 </div>
