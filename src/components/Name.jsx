@@ -1,6 +1,6 @@
 import { FaCheck, FaArrowLeft } from "react-icons/fa"
 import { Link, useNavigate } from "react-router-dom"
-import "./Domain.css";
+import "./Name.css";
 
 
 const Name = (props) => {
@@ -52,7 +52,7 @@ const Name = (props) => {
                             />
                         </div>
                         <p className="text-center"><Link to="/details" className="">I want to create a Domain Name with LetOut</Link></p>
-                        <div className="d-grid gap-2 mt-3">
+                        <div className="d-grid gap-2 mt-3 text-center">
                             <Link to="/" className="button">
                                 Next
                             </Link>

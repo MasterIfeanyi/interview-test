@@ -109,11 +109,6 @@ const Details = () => {
             </div>              
         </div>
 
-        <div className="row">
-            <div className="col-12">
-                <div style={{height: "10vh"}}></div>
-            </div>
-        </div>
 
           
     </div>

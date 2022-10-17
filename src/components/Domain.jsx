@@ -53,7 +53,7 @@ const Domain = (props) =>  {
                             </div>
                         </div>
                         <p className="text-center"><Link to="/domain" className="">Already have an existing domain ?</Link></p>
-                        <div className="d-grid gap-2 mt-3">
+                        <div className="d-grid gap-2 mt-3 text-center">
                             <Link to="/details" className="button">
                                 Next
                             </Link>
@@ -61,13 +61,6 @@ const Domain = (props) =>  {
                     </form>
                 </div>
             </div>
-
-            <div className="row">
-                <div className="col-12">
-                    <div style={{ height: "10vh" }}></div>
-                </div>
-            </div>
-
         </div>
     )
 }

@@ -1,0 +1,36 @@
+/* Login */
+
+.Org-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 100vw;
+  height: 100vh; */
+}
+
+.Org-form {
+  width: 420px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.Org-form-content {
+  padding-left: 12%;
+  padding-right: 18%;
+}
+
+.Org-form-title {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  color: rgb(34, 34, 34);
+  text-align: left;
+}
+
+.circle.margin {
+  margin-left: 18.5%;
+  position: relative;
+}
